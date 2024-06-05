@@ -70,7 +70,7 @@ def twoHiddensLayers(K1, K2):
     #Create our Neural Network.
     model = Sequential()
 
-    model.add(Dense(K1, input_dim = X_train.shape[1] , activation='sigmoid'))#TODO na e3igisw to input=10
+    model.add(Dense(K1, input_dim = X_train.shape[1] , activation='sigmoid'))
     model.add(Dense(K2,  activation='sigmoid'))
     model.add(Dense(3, activation='softmax'))
     model.summary()
